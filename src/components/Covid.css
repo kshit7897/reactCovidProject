@@ -1,0 +1,74 @@
+.heading {
+  color: #2e1076;
+  font-weight: bolder;
+  margin-left: 1rem;
+}
+
+.card {
+  /* width: 350px; */
+  height: 300px;
+  background-color: gainsboro;
+  /* border: 1px solid black; */
+  margin-top: 2rem;
+  border-radius: 10px;
+  box-shadow: 3px 2px 3px 2px grey;
+  /* align-items: center; */
+}
+
+ul li {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  margin-right: 1rem;
+  font-size: large;
+  margin-bottom: 0.8rem;
+}
+span {
+  font-weight: bolder;
+}
+/* div,
+cart-body {
+  margin-left: 5px;
+} */
+.card-main {
+  display: grid;
+  grid-template-columns: 300px 300px 300px 300px;
+  justify-content: space-around;
+}
+.head {
+  text-align: center;
+  color: #457e27;
+}
+.corona-text {
+  color: red;
+}
+
+.input-text {
+  margin-left: 2rem;
+}
+
+input {
+  font-size: medium;
+  width: 16rem;
+  padding: 5px;
+  box-shadow: inset 2px 2px 2px 2px grey;
+  box-shadow: 2px 2px 2px 2px #2e1076;
+  border: none;
+  outline: none;
+}
+.submit {
+  margin-left: 1rem;
+  font-size: medium;
+  padding: 5px;
+  box-shadow: inset 2px 2px 2px 2px grey;
+  box-shadow: 2px 2px 2px 2px red;
+  border: none;
+  outline: none;
+}
+
+.btn {
+  font-size: medium;
+  text-decoration: none;
+  padding: 5px;
+  margin-left: 50rem;
+}
