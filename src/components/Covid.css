@@ -1,3 +1,6 @@
+* {
+  box-sizing: border-box;
+}
 .heading {
   color: #2e1076;
   font-weight: bolder;
@@ -6,7 +9,7 @@
 
 .card {
   /* width: 350px; */
-  height: 300px;
+  height: 310px;
   background-color: gainsboro;
   /* border: 1px solid black; */
   margin-top: 2rem;
@@ -32,8 +35,10 @@ cart-body {
 } */
 .card-main {
   display: grid;
-  grid-template-columns: 300px 300px 300px 300px;
-  justify-content: space-around;
+  grid-gap: 20px;
+  width: 95%;
+  margin: 50px auto;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 .head {
   text-align: center;
@@ -55,6 +60,7 @@ input {
   box-shadow: 2px 2px 2px 2px #2e1076;
   border: none;
   outline: none;
+  border-radius: 10px;
 }
 .submit {
   margin-left: 1rem;
@@ -64,6 +70,7 @@ input {
   box-shadow: 2px 2px 2px 2px red;
   border: none;
   outline: none;
+  border-radius: 10px;
 }
 
 .btn {
@@ -71,4 +78,7 @@ input {
   text-decoration: none;
   padding: 5px;
   margin-left: 50rem;
+  box-shadow: inset 2px 2px 2px 2px grey;
+  box-shadow: 2px 2px 2px 2px rgb(236, 163, 243);
+  border-radius: 10px;
 }
