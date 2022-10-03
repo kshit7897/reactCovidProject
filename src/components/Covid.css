@@ -1,5 +1,7 @@
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 .heading {
   color: #2e1076;
@@ -43,6 +45,7 @@ cart-body {
 .head {
   text-align: center;
   color: #457e27;
+  padding-top: 1rem;
 }
 .corona-text {
   color: red;
@@ -77,8 +80,15 @@ input {
   font-size: medium;
   text-decoration: none;
   padding: 5px;
-  margin-left: 50rem;
   box-shadow: inset 2px 2px 2px 2px grey;
   box-shadow: 2px 2px 2px 2px rgb(236, 163, 243);
   border-radius: 10px;
+  margin-right: 3rem;
+}
+.dark-btn {
+  display: flex;
+  justify-content: flex-end;
+}
+.load {
+  margin-left: 45%;
 }

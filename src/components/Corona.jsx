@@ -12,17 +12,21 @@ function Corona() {
     backgroundColor: "black",
   });
 
+  const [button, setButton] = useState("Dark Mode On");
+
   const toggleStyle = () => {
     if (myStyle.color === "white") {
       setMyStyle({
         color: "black",
         backgroundColor: "white",
       });
+      setButton("Light Mode On");
     } else {
       setMyStyle({
         color: "white",
         backgroundColor: "black",
       });
+      setButton("Dark Mode On");
     }
   };
 
@@ -42,22 +46,28 @@ function Corona() {
         {/* ==========heading============================ */}
 
         <h1 className="head">
-          World Wide Data OF <span className="corona-text">CORONA</span> Cases
-          (COUNTRY WISE)
+          World Wide 🔴LIVE Data OF <span className="corona-text">CORONA</span>{" "}
+          Cases (COUNTRY WISE)
         </h1>
 
         {/* ============================inputfield====================== */}
 
         <div className="input-text">
-          <input type="text" placeholder="Enter Country Name" />
-          <button className="submit">SEARCH</button>
-          <button className="btn" onClick={toggleStyle}>
-            Dark Mode
+          <div className="dark-btn">
+            <button className="btn" onClick={toggleStyle} style={myStyle}>
+              {button}
+            </button>
+          </div>
+          <input type="text" style={myStyle} placeholder="Enter Country Name" />
+          <button className="submit" style={myStyle}>
+            SEARCH
           </button>
         </div>
 
         {loading ? (
-          <h1 className="load">Data Loading....</h1>
+          <h1 className="load" style={myStyle}>
+            Data Loading....
+          </h1>
         ) : (
           <section className="card-main">
             {countries.map((country) => {
