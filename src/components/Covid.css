@@ -88,6 +88,7 @@ input {
 .dark-btn {
   display: flex;
   justify-content: flex-end;
+  padding: 2rem;
 }
 .load {
   margin-left: 45%;
